@@ -1,0 +1,591 @@
+<!-- DOCUMENT-html -->
+<!DOCTYPE html>
+
+<html>
+
+<!-- head -->
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Home</title>
+
+
+    <!--stylesheet-->
+    <link rel="stylesheet" href="stylesheet.css">
+
+
+    <!--javascript-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+
+<!-- body -->
+
+<body>
+
+    <!-- background -->
+    <div class="background-star">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    </div>
+
+    <!-- navi -->
+    <div id="navi">
+
+        <div class="logo">
+            <h1>Canvas</h1>
+        </div>
+
+        <div class="menu">
+            <a class="hover1" href="../home/index.html">Home</a>
+            <a class="hover2" href="../paint/paint.html">Paint</a>
+            <a class="hover3" href="../game/game.html">Game</a>
+            <a class="hover4" href="../svg/svg.html">Svg</a>
+            <a class="hover5" href="#main4">Contact</a>
+            <a class="hover6" href="../logout.php">Logout</a>
+        </div>
+
+    </div>
+
+    <!-- main -->
+    <section id="wrapper">
+        <div class="brand clearfix">
+            <svg version="1.1" id="scotch-digital" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 277.8 23.9" enable-background="new 0 0 277.8 23.9" xml:space="preserve">
+
+                <g class="word word-digital">
+                    <g class="letter c">
+                        <g>
+                            <rect x="135.9" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="135.9" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="134.3" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="134.3" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="135.9" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="135.9" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="134.3" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="134.3" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="135.9" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="135.9" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="134.3" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="134.3" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="141" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="141" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="139.4" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="139.4" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="141" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="141" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="139.4" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="139.4" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="146.1" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="146.1" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="144.5" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="144.5" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="146.1" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="146.1" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="144.5" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="144.5" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="151.2" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="151.2" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="149.6" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="149.6" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="151.2" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="151.2" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="149.6" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="149.6" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+
+                    </g>
+                    <g class="letter a-1">
+                        <g>
+                            <rect x="158" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="158" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="158" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="158" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="158" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="158" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="158" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="158" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="156.4" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="163.1" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="163.1" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="161.5" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="161.5" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="163.1" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="163.1" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="161.5" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="161.5" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="168.2" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="168.2" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="166.6" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="166.6" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="168.2" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="168.2" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="166.6" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="166.6" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="173.3" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="173.3" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="173.3" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="173.3" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="173.3" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="173.3" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="173.3" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="173.3" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="171.7" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+
+                    </g>
+                    <g class="letter n">
+                        <g>
+                            <rect x="180.1" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="180.1" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="180.1" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="180.1" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="180.1" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="180.1" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="180.1" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="180.1" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="180.1" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="180.1" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="178.5" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="185.2" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="185.2" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="183.6" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="183.6" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="190.3" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="190.3" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="188.6" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="188.6" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="195.4" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="195.4" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="193.7" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="193.7" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="200.5" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="200.5" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="200.5" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="200.5" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="200.5" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="200.5" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="200.5" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="200.5" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="200.5" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="200.5" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="198.8" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                    </g>
+                    <g class="letter v">
+                        <g>
+                            <rect x="207.3" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="207.3" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="205.6" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="205.6" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="207.3" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="207.3" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="205.6" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="205.6" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="212.4" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="212.4" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="210.7" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="210.7" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="212.4" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="212.4" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="210.7" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="210.7" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="217.5" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="217.5" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="215.8" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="215.8" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="222.6" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="222.6" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="220.9" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="220.9" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="222.6" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="222.6" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="220.9" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="220.9" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="227.7" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="227.7" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="226" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="226" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="227.7" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="227.7" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="226" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="226" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                    </g>
+                    <g class="letter a-2">
+                        <g>
+                            <rect x="234.5" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="234.5" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="234.5" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="234.5" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="234.5" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="234.5" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="234.5" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="234.5" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="232.8" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="239.6" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="239.6" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="237.9" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="237.9" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="239.6" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="239.6" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="237.9" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="237.9" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="244.7" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="244.7" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="243" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="243" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="244.7" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="244.7" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="243" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="243" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="249.8" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="249.8" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="249.8" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="249.8" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="249.8" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="249.8" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="249.8" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="249.8" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="248.1" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                    </g>
+                    <g class="letter s">
+                        <g>
+                            <rect x="256.6" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="256.6" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="256.6" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="256.6" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="5.3" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="6.9" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="256.6" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="256.6" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="256.6" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="256.6" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="254.9" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="261.7" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="261.7" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="260" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="260" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="261.7" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="261.7" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="260" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="260" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="261.7" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="261.7" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="260" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="260" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="266.8" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="266.8" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="265.1" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="265.1" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="266.8" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="266.8" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="265.1" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="265.1" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="266.8" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="266.8" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="265.1" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="265.1" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="271.9" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="271.9" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="0.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="1.8" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="271.9" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="271.9" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="10.4" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="12" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="271.9" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="271.9" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="15.5" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="17.1" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+                        <g>
+                            <rect x="271.9" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="271.9" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="20.6" fill="#2B282D" width="1.8" height="1.8"></rect>
+                            <rect x="270.2" y="22.2" fill="#2B282D" width="1.8" height="1.8"></rect>
+                        </g>
+
+
+                    </g>
+
+                </g>
+            </svg>
+
+
+            <div class="hover-blocks clearfix">
+                <span class="hover-block c" data-color="#ff6f35" data-letter="c"></span>
+                <span class="hover-block a-1" data-color="#ffb22d" data-letter="a-1"></span>
+                <span class="hover-block n" data-color="#f7df00" data-letter="n"></span>
+                <span class="hover-block v" data-color="#26ff6c" data-letter="v"></span>
+                <span class="hover-block a-2" data-color="#268bff" data-letter="a-2"></span>
+                <span class="hover-block s" data-color="#8b3cff" data-letter="s"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script>
+        $('.hover-block').hover(
+            function() {
+                explodeLetter($(this).parents('section').attr('id'), $(this).data('letter'), $(this).data('color'));
+            },
+            function() {
+                implodeLetter($(this).parents('section').attr('id'), $(this).data('letter'), $(this).data('color'));
+            }
+        );
+        introStuff();
+
+        function explodeLetter(parentID, letter, fillColor) {
+            $('#' + parentID + ' .word-digital .letter.' + letter).find('rect').each(function() {
+                $(this).css({
+                    'fill': fillColor,
+                    '-webkit-transform': 'translate3d(' + randomIntFromInterval(-69, 69) + 'px, ' + randomIntFromInterval(-69, 69) + 'px, 0)',
+                    '-moz-transform': 'translate3d(' + randomIntFromInterval(-69, 69) + 'px, ' + randomIntFromInterval(-69, 69) + 'px, 0)',
+                    '-ms-transform': 'translate3d(' + randomIntFromInterval(-69, 69) + 'px, ' + randomIntFromInterval(-69, 69) + 'px, 0)',
+                    '-o-transform': 'translate3d(' + randomIntFromInterval(-69, 69) + 'px, ' + randomIntFromInterval(-69, 69) + 'px, 0)',
+                    'transform': 'translate3d(' + randomIntFromInterval(-69, 69) + 'px, ' + randomIntFromInterval(-69, 69) + 'px, 0)'
+                });
+            });
+        }
+
+        function implodeLetter(parentID, letter) {
+            $('#' + parentID + ' .word-digital .letter.' + letter).find('rect').css({
+                'fill': '#fff',
+                '-webkit-transform': 'translate3d(0, 0, 0)',
+                '-moz-transform': 'translate3d(0, 0, 0)',
+                '-ms-transform': 'translate3d(0, 0, 0)',
+                '-o-transform': 'translate3d(0, 0, 0)',
+                'transform': 'translate3d(0, 0, 0)'
+            });
+        }
+
+        function randomIntFromInterval(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+        function introStuff() {
+            $('body').addClass('show-background');
+            setTimeout(function() {
+                $('body').addClass('show-stars');
+
+                $('.hover-block.c').trigger("mouseover");
+                setTimeout(function() {
+                    $('.hover-block.c').trigger("mouseout");
+                }, 700);
+
+
+                $('.hover-block.a-1').trigger("mouseover");
+                setTimeout(function() {
+                    $('.hover-block.a-1').trigger("mouseout");
+                }, 700);
+
+                $('.hover-block.n').trigger("mouseover");
+                setTimeout(function() {
+                    $('.hover-block.n').trigger("mouseout");
+                }, 700);
+
+
+                $('.hover-block.v').trigger("mouseover");
+                setTimeout(function() {
+                    $('.hover-block.v').trigger("mouseout");
+                }, 700);
+
+                $('.hover-block.a-2').trigger("mouseover");
+                setTimeout(function() {
+                    $('.hover-block.a-2').trigger("mouseout");
+                }, 700);
+
+                $('.hover-block.s').trigger("mouseover");
+                setTimeout(function() {
+                    $('.hover-block.s').trigger("mouseout");
+                }, 700);
+
+            }, 500);
+        }
+
+    </script>
+
+</body>
+
+</html>

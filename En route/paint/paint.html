@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../paint/paint.css">
+
+
+    <title>Paint</title>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<!-- body -->
+
+<body>
+
+    <!-- background -->
+    <div class="background-star">
+        <div id='stars'></div>
+        <div id='stars2'></div>
+        <div id='stars3'></div>
+    </div>
+
+    <!-- navi -->
+    <div id="navi">
+
+        <div class="logo">
+            <h1>Paint</h1>
+        </div>
+
+        <div class="menu">
+            <a class="hover1" href="../home/index.html">Home</a>
+            <a class="hover2" href="../paint/paint.html">Paint</a>
+            <a class="hover3" href="../game/game.html">Game</a>
+            <a class="hover4" href="../svg/svg.html">Svg</a>
+            <a class="hover5" href="#main4">Contact</a>
+            <a class="hover6" href="../logout.php">Logout</a>
+        </div>
+
+    </div>
+
+    <div class="canvas">
+
+        <canvas id="canvas"></canvas>
+
+        <div id="canvasmenu">
+           
+           <p>色</p>
+            <button class="menuicon" id="colorffffff" style="background-color:#ffffff"></button>
+            <button class="menuicon" id="color000000" style="background-color:#000000"></button>
+            <button class="menuicon" id="color808080" style="background-color:#808080"></button>
+            <button class="menuicon" id="colorc0c0c0" style="background-color:#c0c0c0"></button>
+            <button class="menuicon" id="color0000ff" style="background-color:#0000ff"></button>
+            <button class="menuicon" id="color000080" style="background-color:#000080"></button>
+            <button class="menuicon" id="color008080" style="background-color:#008080"></button>
+            <button class="menuicon" id="color008000" style="background-color:#008000"></button>
+            <button class="menuicon" id="color00ff00" style="background-color:#00ff00"></button>
+            <button class="menuicon" id="color00ffff" style="background-color:#00ffff"></button>
+            <button class="menuicon" id="colorffff00" style="background-color:#ffff00"></button>
+            <button class="menuicon" id="colorff0000" style="background-color:#ff0000"></button>
+            <button class="menuicon" id="colorff00ff" style="background-color:#ff00ff"></button>
+            <button class="menuicon" id="color808000" style="background-color:#808000"></button>
+            <button class="menuicon" id="color800080" style="background-color:#800080"></button>
+            <button class="menuicon" id="color800000" style="background-color:#800000"></button>
+
+
+            <p>太さ</p>
+            <button class="menuicon" id="size21">21</button>
+            <button class="menuicon" id="size14">14</button>
+            <button class="menuicon" id="size7">7</button>
+            <button class="menuicon" id="size3">3</button>
+            
+            <p>透明度</p>
+            <button class="menuicon" id="alpha10" style="background-color:rgba(255,72,1, 1.0)">4</button>
+            <button class="menuicon" id="alpha6" style="background-color:rgba(255,72,1, 0.6)">3</button>
+            <button class="menuicon" id="alpha3" style="background-color:rgba(255,72,1, 0.3)">2</button>
+            <button class="menuicon" id="alpha1" style="background-color:rgba(255,72,1, 0.1)">1</button>
+
+            <p>機能</p>
+            <button class="menuicon" id="clear">削除</button>
+            <button class="menuicon" id="colorf5f5f5">消しゴム</button>
+
+        </div>
+
+    </div>
+
+    <script>
+
+    </script>
+
+    <script>
+        var w = $('.canvas').width();
+        var h = $('.canvas').height();
+        $('#canvas').attr('width', w);
+        $('#canvas').attr('height', h);
+
+(function() {
+        
+        //canvasの読み込み設定
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+ 
+    //キャンバスの背景カラーを決定。 fillRectは長方形に塗るメソッド
+    var ctx = canvas.getContext('2d');
+    ctx.beginPath();
+    ctx.fillStyle = "#f5f5f5";
+    ctx.fillRect(0, 0, 2000, 1000);
+ 
+    //初期値（サイズ、色、アルファ値）の決定
+    var defosize = 3;
+    var defocolor = "#000000";
+    var defoalpha = 1.0;
+ 
+    //マウス継続値の初期値、ここがポイント
+    var mouseX = "";
+    var mouseY = "";
+ 
+    //各イベントに紐づけ
+    canvas.addEventListener('mousemove', onMove, false);
+    canvas.addEventListener('mousedown', onClick, false);
+    canvas.addEventListener('mouseup', drawEnd, false);
+    canvas.addEventListener('mouseout', drawEnd, false);
+ 
+    //マウス動いていて、かつ左クリック時に発火。
+    function onMove(e) {
+        if (e.buttons === 1 || e.witch === 1) {
+            var rect = e.target.getBoundingClientRect();
+            var X = ~~(e.clientX - rect.left);
+            var Y = ~~(e.clientY - rect.top);
+            //draw 関数にマウスの位置を渡す
+            draw(X, Y);
+        };
+    };
+ 
+    //マウスが左クリックされると発火。
+    function onClick(e) {
+        if (e.button === 0) {
+            var rect = e.target.getBoundingClientRect();
+            var X = ~~(e.clientX - rect.left);
+            var Y = ~~(e.clientY - rect.top);
+            //draw 関数にマウスの位置を渡す
+            draw(X, Y);
+        }
+    };
+ 
+    //渡されたマウス位置を元に直線を描く関数
+    function draw(X, Y) {
+        ctx.beginPath();
+        ctx.globalAlpha = defoalpha;
+        //マウス継続値によって場合分け、直線の moveTo（スタート地点）を決定
+        if (mouseX === "") {
+            //継続値が初期値の場合は、現在のマウス位置をスタート位置とする
+            ctx.moveTo(X, Y);
+        } else {
+            //継続値が初期値ではない場合は、前回のゴール位置を次のスタート位置とする
+            ctx.moveTo(mouseX, mouseY);
+        }
+        //lineTo（ゴール地点）の決定、現在のマウス位置をゴール地点とする
+        ctx.lineTo(X, Y);
+        //直線の角を「丸」、サイズと色を決める
+        ctx.lineCap = "round";
+        ctx.lineWidth = defosize * 2;
+        ctx.strokeStyle = defocolor;
+        ctx.stroke();
+        //マウス継続値に現在のマウス位置、つまりゴール位置を代入
+        mouseX = X;
+        mouseY = Y;
+    };
+ 
+    //左クリック終了、またはマウスが領域から外れた際、継続値を初期値に戻す
+    function drawEnd() {
+        mouseX = "";
+        mouseY = "";
+    }
+ 
+    //メニューのアイコン関係
+    var menuIcon = document.getElementsByClassName("menuicon");
+    for (i = 0; i < menuIcon.length; i++) {
+        menuIcon[i].addEventListener("click", canvasMenu, false)
+    }
+ 
+    //メニューボタン管理
+    function canvasMenu() {
+        //id 値によって場合分け
+        var thisId = this.id;
+        if (thisId.indexOf("size") + 1) {
+            defosize = ~~this.id.slice(4, this.id.length);
+        }
+        if (thisId.indexOf("color") + 1) {
+            defocolor = "#" + this.id.slice(5, this.id.length);
+        }
+        if (thisId.indexOf("alpha") + 1) {
+            defoalpha = (~~this.id.slice(5, this.id.length)) / 10;
+        }
+        if (thisId.indexOf("clear") + 1) {
+            //全消しボタン、OKされた場合は fillRect 長方形で覆います
+            if (confirm("すべて消去しますか？")) {
+                ctx.beginPath();
+                ctx.fillStyle = "#f5f5f5";
+                ctx.globalAlpha = 1.0;
+                ctx.fillRect(0, 0, 2000, 1000);
+            }
+        }
+    }
+})();
+    </script>
+
+</body>
+</html>
