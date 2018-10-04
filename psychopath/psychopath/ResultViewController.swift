@@ -1,62 +1,36 @@
-//
-//  ResultViewController.swift
-//  psychopath
-//
-//  Created by 新井達朗 on 2018/10/01.
-//  Copyright © 2018年 新井達朗. All rights reserved.
-//
-
 import UIKit
 
-class ResultViewController: UIViewController {
+class ResultViewController: UIViewController
+{
     
-    let points = Int.random(in:1...10)
-    
+    //結果画面のラベル
     @IBOutlet weak var result: UILabel!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
     }
     
     //segue前のViewControllerから値を取ってくる
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool)
+    {
         let samplepoint = (presentingViewController as? QuizViewController)?.points
-        
-        switch samplepoint {
-        case 1:
-            result.text = "10%です"
-        case 2:
-            result.text = "20%です"
-        case 3:
-            result.text = "30%です"
-        case 4:
-            result.text = "40%です"
-        case 5:
-            result.text = "50%です"
-        case 6:
-            result.text = "60%です"
-        case 7:
-            result.text = "70%です"
-        case 8:
-            result.text = "80%です"
-        case 9:
-            result.text = "90%です"
-        case 10:
-            result.text = "100%です"
-        default:
-            result.text = "0%です"
+
+        //取って来た値によって結果を変化
+        switch samplepoint
+        {
+
+         case 1: result.text = "10%"
+         case 2: result.text = "20%"
+         case 3: result.text = "30%"
+         case 4: result.text = "40%"
+         case 5: result.text = "50%"
+         case 6: result.text = "60%"
+         case 7: result.text = "70%"
+         case 8: result.text = "80%"
+         case 9: result.text = "90%"
+        case 10: result.text = "100%"
+        default: result.text = "0%"
         }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

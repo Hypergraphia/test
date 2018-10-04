@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  psychopath
-//
-//  Created by 新井達朗 on 2018/10/01.
-//  Copyright © 2018年 新井達朗. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
