@@ -16,8 +16,13 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    //segue前のViewControllerから値を取ってくる
+    override func viewDidAppear(_ animated: Bool) {
+        let samplepoint = (presentingViewController as? QuizViewController)?.points
         
-        switch points {
+        switch samplepoint {
         case 1:
             result.text = "10%です"
         case 2:
@@ -36,11 +41,11 @@ class ResultViewController: UIViewController {
             result.text = "80%です"
         case 9:
             result.text = "90%です"
+        case 10:
+            result.text = "100%です"
         default:
             result.text = "0%です"
         }
-
-        // Do any additional setup after loading the view.
     }
     
 
