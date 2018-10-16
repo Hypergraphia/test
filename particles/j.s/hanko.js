@@ -1,3 +1,11 @@
+$(function () {
+    var ractive = new Ractive({
+  el: '#container',
+  template: '#template',
+  data: {} });
+
+})
+
 //hanko.js
 
 $(function () {
@@ -14,4 +22,13 @@ $(function () {
     });
 });
 
+
+// fadeOut.js
+$(function () {
+
+    $('.submit').click(function () {
+        $('.background2').fadeOut(3000);
+    });
+
+});
 

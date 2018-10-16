@@ -12,7 +12,13 @@
 
 </head>
 <body>
-  <div class="background"></div>
+
+<div id="background">
+   <img class="background1" src="/img/letter1.jpeg">
+   <img class="background2" src="/img/letter2.jpeg">
+</div>
+
+
   
       <! header >
     <div id="header">
@@ -66,7 +72,7 @@
     </div>
   
   
-  <script id="template">
+  <div id="template">
     
     <div class="contact-wrapper">
         <div class="envelope {{ flipCard ? 'active' : '' }}">
@@ -108,19 +114,12 @@
         </div>
       </div>
     
-  </script>
+  </div>
+
   
     <script src="../j.s/letter.js"></script>
     <script src="../j.s/modal.js"></script>
-    <script src="../j.s/particles.js"></script>
     <script src="../j.s/setting.js"></script>
-    
-    <script >var ractive = new Ractive({
-  el: '#container',
-  template: '#template',
-  data: {} });
-</script>
-
 
 </body>
 </html>
